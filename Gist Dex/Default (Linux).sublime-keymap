@@ -1,0 +1,3 @@
+[
+  { "keys": ["super+ctrl+v"], "command": "insert_clipboard_as_snippet" }
+]

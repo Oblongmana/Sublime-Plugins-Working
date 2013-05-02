@@ -1,0 +1,6 @@
+[
+  {
+    "caption": "Gist Dex: Insert Clipboard Contents as Snippet",
+    "command": "insert_clipboard_as_snippet"
+  }
+]
