@@ -1,12 +1,14 @@
-Usage
-=====
-Commands Added
---------------
+#Sublime Plugins - Working
+
+##Gist Dex Plugin Usage
+
+###Commands Added
+
 Super+Ctrl+V : Paste the current contents of the clipboard as though they were a snippet, setting selection to the first placeholder
 
 
-Installation
-============
+##Gist Dex Plugin Installation
+
 To install, open a terminal and type 
 
     bash <(curl https://raw.github.com/Oblongmana/Sublime-Plugins-Working/master/Gist%20Dex/install.sh)
