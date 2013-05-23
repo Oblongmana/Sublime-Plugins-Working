@@ -17,7 +17,7 @@ class NewApexPageAndControllerCommand(sublime_plugin.TextCommand):
         controller_options = {
             'metadata_type'     : 'ApexClass',
             'metadata_name'     : controller_api_name,
-            'apex_class_type'   : 'base'
+            'apex_class_type'   : 'default'
         }
 
         util.mm_call('new_metadata', params=page_options) 
