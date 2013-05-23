@@ -2,5 +2,10 @@
   {
     "caption": "MavensMate Extensions: New Visualforce Page and Controller",
     "command": "new_apex_page_and_controller"
+  },
+
+  {
+    "caption": "MavensMate Extensions: New Test for Current File",
+    "command": "new_test_for_current_file"
   }
 ]

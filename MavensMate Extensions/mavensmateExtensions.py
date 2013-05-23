@@ -23,3 +23,20 @@ class NewApexPageAndControllerCommand(sublime_plugin.TextCommand):
         util.mm_call('new_metadata', params=page_options) 
         time.sleep(0.5) #mm seems to get stuck in an infinite (but unproductive) loop if there isn't a slight pause between commands
         util.mm_call('new_metadata', params=controller_options) 
+
+
+class NewTestForCurrentFileCommand(sublime_plugin.TextCommand):
+
+    def run(self, edit):
+        new_test_name = 'Test_' + os.path.basename(os.path.splitext(self.view.file_name())[0])
+        sublime.active_window().show_input_panel("New test class Name", new_test_name, self.on_input, None, None)
+    
+    def on_input(self, input): 
+        test_api_name = util.parse_new_metadata_input(input)
+        test_options = {
+            'metadata_type'     : 'ApexClass',
+            'metadata_name'     : test_api_name,
+            'apex_class_type'   : 'test'
+        }
+
+        util.mm_call('new_metadata', params=test_options)
