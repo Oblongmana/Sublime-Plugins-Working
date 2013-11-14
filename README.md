@@ -26,25 +26,11 @@ Build an output file containing a list of dependencies
 
 ### Usage:
 
-Define the dependencies using the @import syntax
+Define the dependencies using the @import syntax. Works on any type of file, on Windows and OSX, and in ST3. 
 
-CSS:
-    
-        @import url('bootstrap.min.css');
-    
-        body { background-color: #fff; }
-
-JS:
-    
-        //@import url('jquery.min.js'); 
-    
-        $(document).ready(function(){
-            console.log('ready');
-        });
-
-`Command + Shift + C` will concatenate all of the dependences into a new file: `{{filename}}.cat.{{extension}}`
-
-Use with [YUI Compressor](https://github.com/leon/YUI-Compressor) and [SublimeOnSaveBuild](https://github.com/alexnj/SublimeOnSaveBuild) for automatic concat and minify
+**Importing Files:** Use `@import url('path/to/file.ext')` to import a file
+**Output Filename:** Use `@set filename('filename.ext')` to set the output filename
+**Relative Path:** Use `set relapth('relative/path')` to set the path to import `@import`s from, relative to the build file you are executing SublimeConcat on
 
 ### Setup
 
