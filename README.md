@@ -29,19 +29,21 @@ Build an output file containing a list of dependencies
 Define the dependencies using the @import syntax. Works on any type of file, on Windows and OSX, and in ST3. 
 
 **Importing Files:** Use `@import url('path/to/file.ext')` to import a file
+
 **Output Filename:** Use `@set filename('filename.ext')` to set the output filename
+
 **Relative Path:** Use `set relapth('relative/path')` to set the path to import `@import`s from, relative to the build file you are executing SublimeConcat on
 
 ### Setup
 
 TODO: Make this less specific to me? :)
 
-WINDOWS: With the Sublime Text 3/Packages directory as your working directory, run the following in cmd with admin privileges to set up a symbolic link to the SublimeConcat plugin files for this repo. Could probs do as hard link too?
+**WINDOWS**: With the Sublime Text 3/Packages directory as your working directory, run the following in cmd with admin privileges to set up a symbolic link to the SublimeConcat plugin files for this repo. Could probs do as hard link too?
 ```
 mklink /D SublimeConcat Drive:\path\to\repo\SublimeConcat\Plugin
 ```
 
-Mac OSX: With the Sublime Text 3/Packages directory as your working directory, run the following in terminal to set up a hard link to the SublimeConcat plugin files for this repo
+**Mac OSX**: With the Sublime Text 3/Packages directory as your working directory, run the following in terminal to set up a hard link to the SublimeConcat plugin files for this repo
 ```
 ln -n /path/to/repo/SublimeConcat/Plugin SublimeConcat
 ```
