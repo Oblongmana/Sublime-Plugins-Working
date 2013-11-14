@@ -1,0 +1,6 @@
+[
+  {
+    "caption": "SublimeConcat: Build Concatenated File from imports",
+    "command": "concat"
+  }
+]
